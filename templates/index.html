@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<head></head>
+<html>
+<head>
+    <title>Calcul de Distance</title>
+</head>
 <body>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
     <p>Votre resultat est {{ result }}</p>
     <h1>Distance</h1>
     <form method="POST" action="/">
-        <input type="text" name="apoint" id="apoint">
-        <input type="text" name="bpoint" id="bpoint">
+        <input type="text" name="apoint" id="apoint" placeholder="Point A (ex: 2,5)">
+        <input type="text" name="bpoint" id="bpoint" placeholder="Point B (ex: 1,6)">
         <input type="submit" value="soumettre">
     </form>
 </body>

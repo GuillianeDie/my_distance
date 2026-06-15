@@ -1,0 +1,8 @@
+
+sonar.projectKey=my-distance
+
+sonar.sources=.
+
+sonar.exclusions=.venv/**,tests/**,uv.lock
+
+sonar.python.coverage.reportPaths=coverage.xml
